@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+    <style>
+        img {
+            border: 10px solid rgba(226,226,226,.5);
+            border-radius: 5px;;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Imagen con enlace</h1>
+        <a href="http://somosviernes.es">
+            <img src="https://www.somosviernes.es/wp-content/uploads/2018/04/aula3-400x270.jpg" alt="Somos viernes"/>
+        </a>
+        <br>
+        <hr>
+        <h1>Mapa de imagenes y areas</h1>
+        <img src="https://lh3.googleusercontent.com/proxy/gH3IDbwh6Rh0a4Lgh4_Xsm3cgrwf2g30rkbpLLEZvWL8aAPAUe3PQTDHFO6p2VMFRyGFOVVq_-f_iQuq_wODsY4Emgoeoh8I-jEl8vbq8746uTVtHFruPvrhC5mR22W1-9oIeJa9FQf6zVVel_O3j_Szl3C0POrim_EwbdlhMCfALBQqUuGYajtPJsacHBMpQn8Z"
+            usemap="#islas-canarias" alt="Islas Canarias">
+        <map name="islas-canarias">
+            <area shape="rect" coords="139,93,237,165" href="https://es.wikipedia.org/wiki/Tenerife" title="Tenerife">
+        </map>
+        <hr>
+
+        <h1>Listas</h1>
+        <ol>
+            <li>MF0491_3
+                <ul>
+                    <li>UF1841</li>
+                    <li>UF1842</li>
+                    <li>UF1843</li>
+                </ul>
+            </li>
+            <li>MF0492_3
+                <ol type="a">
+                    <li>UF1844</li>
+                    <li>UF1845</li>
+                    <li>UF1846</li>
+                </ol>
+            </li>
+        </ol>
+        <hr>
+        <h1>Crear una Tabla</h1>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td colspan="2">7</td>
+            </tr>
+            <tr>
+                <td rowspan="2">8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td colspan="2" rowspan="2">15</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+        </table>
+    </main>
+
+    
+</body>
+</html>
