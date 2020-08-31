@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6, UNIDAD I -DESARROLLO DE APLICACIONES CON TECNOLOGÍAS WEB</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Formulario de pedidos</h1>
+            <form action="raycodocenteweb.com" method="get">
+                <label for="address">Dirrección de envio:</label>
+                <input type="text" name="address" id="address" style="width: 70%;">
+                <h2>Productos</h2>
+                <h3>Producto A</h3>
+                <figure>
+                    <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-xr-coral-select-201809?wid=441&hei=529&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1551226036571"
+                    alt="IPhone" style="height: 50px;">
+                    <figcaption>689,00 €</figcaption>
+                </figure>
+                <label for="quantityA">introduzca una cantidad</label>
+                <input type="number" name="quantityA" id="quantityA">
+
+                <h3>Producto B</h3>
+                <figure>
+                    <img src="https://www.merca2.es/wp-content/uploads/2020/08/El-corte-Ingl%C3%A9s-Tagus-Gaia-Eco.jpg"
+                    alt="Tagus books" style="height: 50px;">
+                    <figcaption>189,59 €</figcaption>
+                </figure>
+                <label for="quantityB">introduzca una cantidad</label>
+                <input type="number" name="quantityB" id="quantityB">
+
+                <h3>Producto C</h3>
+                <figure>
+                    <img src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/201703/13/00128637601957____1__640x640.jpg"
+                    alt="Lector de tarjetas" style="height: 50px;">
+                    <figcaption>39,99 €</figcaption>
+                </figure>
+                <label for="quantityC">introduzca una cantidad</label>
+                <input type="number" name="quantityC" id="quantityC">
+
+                <h3>Producto D</h3>
+                <figure>
+                    <img src="https://i.pinimg.com/originals/b5/97/0a/b5970ae215159933f1755c45f887267d.jpg"
+                    alt="Videocámara Polaroid Cube HD Sports Action" style="height: 50px;">
+                    <figcaption>89,39 €</figcaption>
+                </figure>
+                <label for="quantityD">introduzca una cantidad</label>
+                <input type="number" name="quantityD" id="quantityD">
+                <br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <hr>
+        <section>
+            <h1>Formulario de sugerencias</h1>
+            <form action="raycodocenteweb.com" method="POST">
+
+                <label for="address">Role de usuario</label>
+                <select name="userRole" id="userRole" required>
+                    <option value="">Selecciona un role</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="docente">Docente</option>
+                    <option value="personalLaboral">Personal laboral</option>
+                </select>
+                <br>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                
+                <label for="date">Fecha:</label>
+                <input type="datetime" name="date" id="date">
+                <br>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" name="asunto" id="asunto">
+                <br>
+
+                <label for="suggestion">sugerencia</label>
+                <textarea name="suggestion" id="suggestion" cols="80" rows="10"></textarea>
+                <br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
