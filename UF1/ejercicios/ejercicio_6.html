@@ -58,7 +58,7 @@
             <h1>Formulario de sugerencias</h1>
             <form action="raycodocenteweb.com" method="POST">
 
-                <label for="address">Role de usuario</label>
+                <label for="userRole">Role de usuario</label>
                 <select name="userRole" id="userRole" required>
                     <option value="">Selecciona un role</option>
                     <option value="estudiante">Estudiante</option>
@@ -81,6 +81,15 @@
 
                 <label for="suggestion">sugerencia</label>
                 <textarea name="suggestion" id="suggestion" cols="80" rows="10"></textarea>
+                <br>
+
+                <label for="departament">Selecciona uno o varios departamentos de destino</label>
+                <select name="departament" id="departament" required multiple>
+                    <option value="">Selecciona uno o varios departamentos</option>
+                    <option value="profesorado">Profesorado</option>
+                    <option value="direccion">Dirección</option>
+                    <option value="becas">Becas</option>
+                </select>
                 <br>
 
                 <button type="submit">Enviar</button>
