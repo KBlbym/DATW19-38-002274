@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectores descendietes</title>
+	<style type="text/css">
+
+	/*
+	Por cada regla indica cuales son los elementos
+	a los que se aplicarán las propiedades
+	
+	//Todos los LI's hijos de UL con Id "Saludos" que sea desciendiente de un div
+	// y a su ves sea el cuerto div hacia abajo
+	div div div div ul#Saludos > li{
+		background-color: yellow;
+	}
+
+	//Todos los Li`s hijo de UL que sea descendiente del cuarto DIV hacia abajo
+	div div div div ul> li{
+		background-color: yellow;
+	}
+
+	//Todos los LI`s que sean hijos de UL que tenga clase "listaYellow"
+	//y que asu ves sea hijo de un DIV, y que este Div sea hijo de otro DIV,
+	//Del mismo modo sea hijo de un DIV que tenga el ID "container", que tambien
+	//debe ser hijo de otro DIV, Y este tambien tiene que ser hijo de un DIV
+	div > div > div#container > div > div > ul.listaYellow > li{
+		background-color: red;
+	}
+
+	//Como el anterior, solo cambia que ante el DIV que tenga un ID/
+	//y este caso todos lo DIVs que tenga la clase "container".
+	div > div > div.container > div > div > ul.listaYellow > li{
+		background-color: red;
+	}
+	*/
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id ="container1">
+			<div class="container">
+				<div id="container2">
+					<div class="container">
+						<ul class="listaYellow">
+							<li>Hola</li>
+						</ul>
+						<ul class="listaBlue">
+							<li>Ciao</li>
+						</ul>
+						<ul id="Saludos">
+							<li>Ciao</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

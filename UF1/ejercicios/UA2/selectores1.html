@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio Selectores</title>
+	<style>
+/*
+		//Todos los parrafos (p) hijos directos de contenedor (DIV) que este asu vez
+		//sea el hermano del contenedor DIV que tenga la clase "cont1"
+		div.cont1 + div > p{  }
+
+		//Todos los parrafos (p) descendiente del contenedor DIV, y que éste sea
+		//precedido del contenedor DIV con class "cont1".
+		//en otras palabra los p del div que esten a las misma nivel (hermano) del DIV y despues, que
+		//tenga la class "cont1"
+		div.cont1 ~ div p{  }
+
+		//Todos los elementos del DIV que tenga la class "cont2"
+		div.cont2 *{}
+
+		//El parrafo (p) que este justo despues del la etiqueta li
+		li + p{}
+
+		//El parrafo (p) que este justo despues de DIV y que éste sea hemano
+		//del DIV y que a su ves este justo despues del otro DIV que también 
+		//este justo despues de un DIV 
+		div + div + div > div + p{}
+
+		//Todos los parrafos (p) que sean descendientes de un div
+		div p{}
+
+		//La tercera LI que este justo despues de dos LI continuos. 
+		//y que asu ves la primera LI este justo despues de un UL
+		//y que este sea descediente de un DIV
+		//Anque este regla nunca se llegaria a aplicar. Porque el LI siempre
+		//debe estar dentro de un UL.
+		//Por lo tanto en este caso ninguno 
+		div ul + li + li + li{}
+
+		//Todos los Ps despues H1 y  al mismo nivel, y que este H1 esta despues
+		//de otro H1 descendiente de un DIV que es precedido de otro DIV
+		//En este caso el ultimo parrafo del div que tiene la clase "cont4"
+		div ~ div h1 ~ h1 ~p{}
+
+		//El Quinto p de una serie de P's
+		//es este caso e quinto p del div con clase "cont1"
+		p+p+p+p+p{}
+
+		//El P que esta justo despues de otro P, y que este P sea hijo directo
+		//de un DIV, y que este DIV sea precedido de un DIV del mismo nivel (hermano) 
+		//y que tambien debe estar justo despues de un DIV
+		div + div ~ div > p + p{}
+
+		//Todos los p's que sean hijos directos de un elemento con la clase "cont3"
+		.cont3 > p{}
+
+		//El P que este justo despues (pegado) de un elemento con clase "foto"
+		.foto + p {}
+
+		//El P que este justo despues de un DIV
+		div + p{}
+*/
+	</style>
+</head>
+<body>
+
+	<div class="cont1">
+		<p>relleno1</p>
+		<p>relleno2</p>
+		<p>relleno3</p>
+		<p>relleno4</p>
+		<p>relleno5</p>
+	</div>
+	<div class="cont2">
+		<ul>
+			<li>elemento 1</li>
+			<li>elemento 2</li>
+			<li>elemento 3</li>
+			<li>elemento 4</li>
+			<li>elemento 5</li>
+		</ul>
+		<p>relleno6</p>
+	</div>
+	<div id="cont3">
+		<p>relleno7</p>
+		<div class="foto">
+			<p>relleno8</p>
+			<p>relleno9</p>
+			<p>relleno10</p>
+			<p>relleno11</p>
+		</div>
+		<p>relleno12</p>
+	</div>
+	<div class="cont4">
+		<p>relleno13</p>
+		<p>relleno14</p>
+		<p>relleno15</p>
+		<p>relleno16</p>
+		<p>relleno17</p>
+		<p>relleno18</p>
+		<h1>Cabecera 1</h1>
+		<p>relleno19</p>
+		<h1>Cabecera 2</h1>
+		<p>relleno20</p>
+	</div>
+</body>
+</html>
